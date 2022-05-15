@@ -16,7 +16,7 @@ public class Complaint {
 			 //Provide the correct details: DBServer/DBName, username, password 
 			 con= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/approvement", "root", "root");
 
-			//For testing          
+			//For testing successfully connected         
 			 System.out.print("Successfully connected");
 			 
 		}catch(Exception e) {
@@ -35,7 +35,7 @@ public class Complaint {
 				return "Error while connecting to the database for reading.";
 			}
 			
-			//prepare the html table to be displayed
+			//prepare the html table to displayed
 			output = "<table border='1'><tr><th>complaintCategory</th>"
 					+"<th>complaintType</th>"
 					+"<th>accountNo</th>"
